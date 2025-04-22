@@ -14,8 +14,9 @@ try {
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  basePath: process.env.NODE_ENV === 'production' ? '/OfflineOriginalUITestingSoftware' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/OfflineOriginalUITestingSoftware/' : '',
+  basePath: '/OfflineOriginalUITestingSoftware',
+  assetPrefix: '/OfflineOriginalUITestingSoftware/',
+  trailingSlash: true,
   eslint: {
     ignoreDuringBuilds: true,
   },
