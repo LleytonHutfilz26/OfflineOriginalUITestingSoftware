@@ -13,6 +13,7 @@ try {
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  basePath: '/OfflineOriginalUITestingSoftware',
   eslint: {
     ignoreDuringBuilds: true,
   },
